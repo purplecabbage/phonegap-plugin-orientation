@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="phonegap-plugin-orientation"
+    version="0.0.1">
+    <name>phonegap-plugin-orientation</name>
+    <description>PhoneGap runtime configuration of allowed orientations</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,phonegap,orientation</keywords>
+    <repo>https://github.com/purplecabbage/phonegap-plugin-orientation</repo>
+    <issue>https://github.com/purplecabbage/phonegap-plugin-orientation/issues</issue>
+
+    <js-module src="www/orientation.js" name="orientation">
+        <clobbers target="PGOrientation" />
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="PGOrientation">
+                <param name="ios-package" value="PGOrientation"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/PGOrientation.h" />
+        <source-file src="src/ios/PGOrientation.m" />
+    </platform>
+
+</plugin>
