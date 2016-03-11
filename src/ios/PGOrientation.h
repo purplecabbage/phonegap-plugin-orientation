@@ -1,4 +1,10 @@
 
+#import <UIKit/UIKit.h>
+#import <Cordova/CDVPlugin.h>
 
+@interface PGOrientation : CDVPlugin
+{}
 
-// setAllowedOrientations
+- (void)setAllowedOrientations:(CDVInvokedUrlCommand*)command;
+
+@end
