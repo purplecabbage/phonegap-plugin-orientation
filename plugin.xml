@@ -21,12 +21,13 @@
             <feature name="PGOrientation">
                 <param name="ios-package" value="PGOrientation"/>
             </feature>
+
+            <preference name="Orientation" value="all" />
+            
         </config-file>
-        <config-file target="config.xml" parent="/*">
-            <platform name="ios">
-                <preference name="Orientation" value="all" />
-            </platform>
-        </config-file>
+        
+
+        
 
         <header-file src="src/ios/PGOrientation.h" />
         <source-file src="src/ios/PGOrientation.m" />
