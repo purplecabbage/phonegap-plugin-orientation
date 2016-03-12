@@ -20,15 +20,9 @@
         <config-file target="config.xml" parent="/*">
             <feature name="PGOrientation">
                 <param name="ios-package" value="PGOrientation"/>
-            </feature>
-
-            <preference name="Orientation" value="all" />
-            
+            </feature>            
         </config-file>
         
-
-        
-
         <header-file src="src/ios/PGOrientation.h" />
         <source-file src="src/ios/PGOrientation.m" />
     </platform>
