@@ -8,7 +8,9 @@ module.exports = {
 		'Landscape':4,
 		'LandscapeUpsideDown':8
 	},
-	setAllowedOrientations(orientationMask) {
-		cordova.exec(0,0,"PGOrientation","setAllowedOrientations",[orientationMask]);
+	setAllowedOrientations(success,error,orientationMask) {
+		var win = success || function(){};
+		var lose = error || function(){};
+		cordova.exec(win,lose,"PGOrientation","setAllowedOrientations",[orientationMask]);
 	}
 }
