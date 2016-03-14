@@ -37,3 +37,17 @@ example use:
   This plugin does not replace the Orientation preference tag, it provides a subset of allowed orientations that are configurable at runtime.  Only orientations explicitly allowed by the orientation preference tag in config.xml can be supported at runtime.  The expected use of this plugin is that most developers would support 'all' orientations in the preference tag, and then dynamically change what was allowed at runtime, based on what they are displaying in the app.
  
 This plugin does NOT force a new orientation, the user will still need to rotate the device in order for the orientation to actually change.
+
+###Demo App
+
+The demo/ folder contains a simple app to demonstrate the functionality of this plugin, and how to use it's api.
+
+After cloning the repo, you can run the demo by running :
+
+    cd demo/
+    cordova platform add ios
+    cordova plugin add .. --link
+    cordova run ios
+
+
+
