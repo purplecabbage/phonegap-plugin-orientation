@@ -26,5 +26,11 @@
         <header-file src="src/ios/PGOrientation.h" />
         <source-file src="src/ios/PGOrientation.m" />
     </platform>
+    <!-- windows -->
+    <platform name="windows">
+        <js-module src="src/windows/PGOrientationProxy.js" name="PGOrientationProxy">
+            <merges target="" />
+        </js-module>
+    </platform>
 
 </plugin>
